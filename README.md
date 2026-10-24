@@ -25,7 +25,7 @@ PromptVault finds every Claude Code session already on your disk, indexes it, an
 
 ## Install
 
-You need **Node.js 22.13 or newer** ([nodejs.org](https://nodejs.org)). Works on Windows, macOS, and Linux.
+You need **Node.js 22.23+ or 24+** (Node 23 is not supported) ([nodejs.org](https://nodejs.org)). Works on Windows, macOS, and Linux.
 
 ```sh
 npx promptvault            # index + open the search page

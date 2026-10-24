@@ -55,7 +55,7 @@ CREATE TABLE IF NOT EXISTS stars (
 `;
 
 const COUNT_CAP = 10000;
-export const MIN_NODE = '24';
+export const MIN_NODE = '22.23+ or 24+';
 
 // Turn what a person types into a safe FTS5 query. Every word is prefix-matched,
 // "quoted phrases" stay phrases, and punctuation can never cause a syntax error.
@@ -85,7 +85,7 @@ export function openStore(dbPath) {
   } catch (err) {
     if (/fts5/i.test(err.message)) {
       db.close();
-      throw new Error(`Your Node.js ${process.versions.node} was built without SQLite full-text search (FTS5). Please install Node.js ${MIN_NODE} or newer from nodejs.org.`);
+      throw new Error(`Your Node.js ${process.versions.node} was built without SQLite full-text search (FTS5). Please install Node.js ${MIN_NODE} from nodejs.org.`);
     }
     throw err;
   }

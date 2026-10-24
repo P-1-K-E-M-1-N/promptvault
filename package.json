@@ -19,7 +19,7 @@
     "demo": "node bin/promptvault.js --db ./.demo/demo.db --claude-dir ./test/fixtures/claude-code --import ./test/fixtures/chatgpt/conversations.json --import ./test/fixtures/claude-export/conversations.json --import ./test/fixtures/gemini/MyActivity.json"
   },
   "engines": {
-    "node": ">=22.13.0"
+    "node": "^22.23.0 || >=24.0.0"
   },
   "keywords": [
     "claude-code",

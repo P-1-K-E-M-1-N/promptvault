@@ -31,7 +31,7 @@ body:
     attributes:
       label: Versions
       description: "Output of `npx promptvault --version` and `node --version`, plus the version of the AI tool if relevant"
-      placeholder: "promptvault 0.1.0, node v22.13.0, Claude Code 2.1.300"
+      placeholder: "promptvault 0.1.0, node v24.19.0, Claude Code 2.1.300"
     validations:
       required: true
   - type: dropdown

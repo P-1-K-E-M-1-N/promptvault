@@ -18,7 +18,7 @@ npm test            # node:test, no install step needed
 npm run demo        # opens the UI on the fake fixture data only
 ```
 
-Requires Node 22.13+.
+Requires Node 22.23+ or 24+.
 
 ## How the code is laid out
 

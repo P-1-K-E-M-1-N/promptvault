@@ -22,9 +22,9 @@ The main choices behind PromptVault v1, explained without jargon. Each one says 
 
 **What:** Your history is copied into one database file on your computer. "Full-text search" (SQLite's FTS5) works like a book's index: it knows which messages contain each word, so searches are instant instead of re-reading every file.
 
-**Why:** SQLite is the most widely used database in the world, and it's a single file you can delete. Recent Node versions (22.13+) include SQLite, so nothing has to be compiled during installation. Compilation is the most common reason `npx` tools fail on Windows.
+**Why:** SQLite is the most widely used database in the world, and it's a single file you can delete. Recent Node versions include SQLite, so nothing has to be compiled during installation. Compilation is the most common reason `npx` tools fail on Windows.
 
-**Cost:** It requires Node 22.13 or newer (released January 2025). Older Node versions get a clear message saying so.
+**Cost:** It requires Node 22.23+ or 24+. Earlier versions (including all of Node 23) ship SQLite without the full-text search part, which we found out from the first CI run. Older versions get a clear message saying so.
 
 ## 4. One plugin file per AI tool
 
