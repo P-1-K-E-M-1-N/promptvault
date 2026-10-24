@@ -1,0 +1,47 @@
+{
+  "name": "promptvault",
+  "version": "0.1.0",
+  "description": "Every prompt you've ever written to an AI, searchable in one place. Runs on your machine. Nothing uploaded.",
+  "type": "module",
+  "bin": {
+    "promptvault": "bin/promptvault.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "public",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node bin/promptvault.js",
+    "test": "node --test \"test/*.test.js\"",
+    "demo": "node bin/promptvault.js --db ./.demo/demo.db --claude-dir ./test/fixtures/claude-code --import ./test/fixtures/chatgpt/conversations.json --import ./test/fixtures/claude-export/conversations.json --import ./test/fixtures/gemini/MyActivity.json"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "keywords": [
+    "claude-code",
+    "chatgpt",
+    "gemini",
+    "prompts",
+    "search",
+    "local-first",
+    "sqlite",
+    "fts5",
+    "cli",
+    "ai-history"
+  ],
+  "author": "YOUR_NAME",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YOUR_GITHUB_USERNAME/promptvault.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YOUR_GITHUB_USERNAME/promptvault/issues"
+  },
+  "homepage": "https://github.com/YOUR_GITHUB_USERNAME/promptvault#readme",
+  "dependencies": {}
+}

@@ -1,0 +1,88 @@
+[
+  {
+    "title": "Regex for UK postcodes",
+    "create_time": 1767225600.123,
+    "update_time": 1767226000.5,
+    "conversation_id": "6795a1b2-0000-4000-8000-0000000000c1",
+    "id": "6795a1b2-0000-4000-8000-0000000000c1",
+    "current_node": "n-a2",
+    "mapping": {
+      "root": { "id": "root", "message": null, "parent": null, "children": ["n-sys"] },
+      "n-sys": {
+        "id": "n-sys",
+        "message": { "id": "n-sys", "author": { "role": "system" }, "create_time": null, "content": { "content_type": "text", "parts": [""] }, "metadata": { "is_visually_hidden_from_conversation": true } },
+        "parent": "root", "children": ["n-ctx", "n-u1"]
+      },
+      "n-ctx": {
+        "id": "n-ctx",
+        "message": { "id": "n-ctx", "author": { "role": "user" }, "create_time": 1767225600.2, "content": { "content_type": "user_editable_context", "user_profile": "I am a developer", "user_instructions": "Be terse" }, "metadata": { "is_visually_hidden_from_conversation": true } },
+        "parent": "n-sys", "children": []
+      },
+      "n-u1": {
+        "id": "n-u1",
+        "message": { "id": "n-u1", "author": { "role": "user" }, "create_time": 1767225601.0, "content": { "content_type": "text", "parts": ["Give me a regex for UK postcodes"] }, "metadata": {} },
+        "parent": "n-sys", "children": ["n-a1-old", "n-a1"]
+      },
+      "n-a1-old": {
+        "id": "n-a1-old",
+        "message": { "id": "n-a1-old", "author": { "role": "assistant" }, "create_time": 1767225605.0, "content": { "content_type": "text", "parts": ["DISCARDED FIRST ANSWER that was regenerated"] }, "recipient": "all", "metadata": {} },
+        "parent": "n-u1", "children": []
+      },
+      "n-a1": {
+        "id": "n-a1",
+        "message": { "id": "n-a1", "author": { "role": "assistant" }, "create_time": 1767225610.0, "content": { "content_type": "text", "parts": ["Use ^[A-Z]{1,2}\\d[A-Z\\d]? ?\\d[A-Z]{2}$ with the i flag."] }, "recipient": "all", "metadata": {} },
+        "parent": "n-u1", "children": ["n-u2-old", "n-u2"]
+      },
+      "n-u2-old": {
+        "id": "n-u2-old",
+        "message": { "id": "n-u2-old", "author": { "role": "user" }, "create_time": 1767225700.0, "content": { "content_type": "text", "parts": ["EDITED AWAY prompt about Python"] }, "metadata": {} },
+        "parent": "n-a1", "children": []
+      },
+      "n-u2": {
+        "id": "n-u2",
+        "message": { "id": "n-u2", "author": { "role": "user" }, "create_time": 1767225710.0, "content": { "content_type": "text", "parts": ["Test it against SW1A 1AA in Python"] }, "metadata": {} },
+        "parent": "n-a1", "children": ["n-think"]
+      },
+      "n-think": {
+        "id": "n-think",
+        "message": { "id": "n-think", "author": { "role": "assistant" }, "create_time": 1767225711.0, "content": { "content_type": "thoughts", "thoughts": [{ "summary": "Plan", "content": "secret reasoning" }] }, "recipient": "all", "metadata": {} },
+        "parent": "n-u2", "children": ["n-code"]
+      },
+      "n-code": {
+        "id": "n-code",
+        "message": { "id": "n-code", "author": { "role": "assistant" }, "create_time": 1767225712.0, "content": { "content_type": "code", "language": "python", "text": "import re\nprint(bool(re.match(r'^[A-Z]{1,2}\\d', 'SW1A 1AA')))" }, "recipient": "python", "metadata": {} },
+        "parent": "n-think", "children": ["n-tool"]
+      },
+      "n-tool": {
+        "id": "n-tool",
+        "message": { "id": "n-tool", "author": { "role": "tool", "name": "python" }, "create_time": 1767225713.0, "content": { "content_type": "execution_output", "text": "True" }, "metadata": {} },
+        "parent": "n-code", "children": ["n-a2"]
+      },
+      "n-a2": {
+        "id": "n-a2",
+        "message": { "id": "n-a2", "author": { "role": "assistant" }, "create_time": 1767225714.0, "content": { "content_type": "text", "parts": ["It matches: SW1A 1AA is valid."] }, "recipient": "all", "metadata": {} },
+        "parent": "n-tool", "children": []
+      }
+    }
+  },
+  {
+    "title": "Photo caption ideas",
+    "create_time": 1769904000,
+    "update_time": 1769904100,
+    "conversation_id": "6795a1b2-0000-4000-8000-0000000000c2",
+    "current_node": "m-a1",
+    "mapping": {
+      "m-root": { "id": "m-root", "message": null, "parent": null, "children": ["m-u1"] },
+      "m-u1": {
+        "id": "m-u1",
+        "message": { "id": "m-u1", "author": { "role": "user" }, "create_time": 1769904001, "content": { "content_type": "multimodal_text", "parts": [{ "content_type": "image_asset_pointer", "asset_pointer": "file-service://file-abc", "width": 800, "height": 600 }, "Write three captions for this sunset photo"] }, "metadata": {} },
+        "parent": "m-root", "children": ["m-a1"]
+      },
+      "m-a1": {
+        "id": "m-a1",
+        "message": { "id": "m-a1", "author": { "role": "assistant" }, "create_time": 1769904005, "content": { "content_type": "text", "parts": ["1. Golden hour, no filter.\n2. The sky did the editing.\n3. Day's last light."] }, "recipient": "all", "metadata": {} },
+        "parent": "m-u1", "children": []
+      }
+    }
+  }
+]

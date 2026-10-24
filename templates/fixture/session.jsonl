@@ -1,0 +1,4 @@
+{"my_source_marker":true,"session_id":"demo-001","cwd":"/home/dev/shop","role":"user","text":"Fix the login redirect loop","time":"2026-01-05T09:00:00Z"}
+{"session_id":"demo-001","role":"assistant","text":"The middleware redirects /login to itself when the cookie is missing.","time":"2026-01-05T09:00:05Z"}
+{"session_id":"demo-001","role":"tool","output":"PASS auth.test.ts (3 tests)","time":"2026-01-05T09:00:30Z"}
+{"session_id":"demo-001","role":"assistant","te

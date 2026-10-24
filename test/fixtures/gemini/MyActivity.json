@@ -1,0 +1,37 @@
+[
+  {
+    "header": "Gemini Apps",
+    "title": "Prompted And now in Spanish please",
+    "time": "2026-06-15T14:20:00.000Z",
+    "products": ["Gemini Apps"],
+    "activityControls": ["Gemini Apps Activity"],
+    "safeHtmlItem": [{ "html": "<p>Sí: <b>Tres ideas</b> para la cena.</p>" }]
+  },
+  {
+    "header": "Gemini Apps",
+    "title": "Prompted Give me three dinner ideas with chickpeas",
+    "time": "2026-06-15T14:10:00.000Z",
+    "products": ["Gemini Apps"],
+    "activityControls": ["Gemini Apps Activity"],
+    "safeHtmlItem": [{ "html": "<ol><li>Chana masala</li><li>Roasted chickpea tacos</li><li>Hummus bowls</li></ol><p>Enjoy &amp; experiment!</p>" }]
+  },
+  {
+    "header": "Gemini Apps",
+    "title": "Used Gemini Apps",
+    "time": "2026-06-14T08:00:00.000Z",
+    "products": ["Gemini Apps"]
+  },
+  {
+    "header": "Search",
+    "title": "Searched for chickpeas",
+    "time": "2026-06-14T07:00:00.000Z",
+    "products": ["Search"]
+  },
+  {
+    "header": "Gemini Apps",
+    "title": "Prompted Explain what a Bloom filter is",
+    "time": "2026-06-01T09:00:00.000Z",
+    "products": ["Gemini Apps"],
+    "safeHtmlItem": [{ "html": "A Bloom filter is a probabilistic set: no false negatives, some false positives." }]
+  }
+]

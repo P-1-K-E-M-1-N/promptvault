@@ -1,0 +1,49 @@
+name: Bug report
+description: Something broke or looks wrong
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! **Please don't paste real conversations.** If a parser fails, a redacted line that shows the *shape* is perfect.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: dropdown
+    id: source
+    attributes:
+      label: Which source is involved?
+      options:
+        - Claude Code
+        - ChatGPT export
+        - Claude.ai export
+        - Gemini Takeout
+        - The search UI itself
+        - Not sure
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: "Output of `npx promptvault --version` and `node --version`, plus the version of the AI tool if relevant"
+      placeholder: "promptvault 0.1.0, node v22.13.0, Claude Code 2.1.300"
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options: [Windows, macOS, Linux, WSL]
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Terminal output
+      description: Anything PromptVault printed (lines starting with `!` are indexing errors)
+      render: text

@@ -1,0 +1,4 @@
+{"type":"summary","summary":"Old-style summary title","leafUuid":"x"}
+{"parentUuid":null,"isSidechain":false,"type":"user","message":{"role":"user","content":"Write an RSS feed generator for my Astro blog."},"uuid":"b1","timestamp":"2026-05-10T18:30:00.000Z","cwd":"/home/sam/blog","sessionId":"7d1e5f00-2222-4e2a-8b3c-1c2d3e4f0002","version":"2.0.10"}
+{"parentUuid":"b1","isSidechain":false,"type":"assistant","message":{"id":"msg_b1","role":"assistant","content":[{"type":"text","text":"Here is an `rss.xml.ts` endpoint using @astrojs/rss."}]},"uuid":"b2","timestamp":"2026-05-10T18:30:20.000Z","cwd":"/home/sam/blog","sessionId":"7d1e5f00-2222-4e2a-8b3c-1c2d3e4f0002"}
+{"type":"ai-title","aiTitle":"Astro RSS feed generator","sessionId":"7d1e5f00-2222-4e2a-8b3c-1c2d3e4f0002"}

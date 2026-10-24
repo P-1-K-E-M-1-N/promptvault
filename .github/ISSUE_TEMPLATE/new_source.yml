@@ -1,0 +1,38 @@
+name: New source request
+description: Ask for (or offer to build) support for another AI tool
+labels: [new-source]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Each source is one plugin file, and most take about 30 minutes. See [CONTRIBUTING.md → Add a new source](../blob/main/CONTRIBUTING.md#add-a-new-source-in-30-minutes).
+  - type: input
+    id: tool
+    attributes:
+      label: Tool
+      placeholder: "e.g. Cursor, Codex CLI, Aider, Copilot Chat, Perplexity"
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Where does the history live?
+      options:
+        - Files on my disk (no export needed)
+        - An export/download I request from the service
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: location
+    attributes:
+      label: Location and format
+      description: Paths per OS, file type (JSONL, JSON, SQLite...), and a **redacted/fake** sample of the structure if you can.
+      render: text
+  - type: checkboxes
+    id: help
+    attributes:
+      label: Can you help?
+      options:
+        - label: I can build the plugin myself
+        - label: I can test it against my real data (locally, nothing shared)
