@@ -21,7 +21,7 @@ const FORBIDDEN = [
   [/\bhttp\.(request|get)\s*\(/, 'makes an outgoing HTTP request'],
   [/\bnew\s+(WebSocket|EventSource)\b/, 'opens a socket'],
   [/navigator\.sendBeacon/, 'sends a beacon'],
-  [/https?:\/\/(?!127\.0\.0\.1|localhost|github\.com\/YOUR_GITHUB_USERNAME|github\.com\/sponsors\/YOUR_GITHUB_USERNAME)[a-z]/i, 'references a remote URL'],
+  [/https?:\/\/(?!127\.0\.0\.1|localhost|github\.com\/P-1-K-E-M-1-N|github\.com\/sponsors\/P-1-K-E-M-1-N)[a-z]/i, 'references a remote URL'],
 ];
 
 test('no outgoing network code in src/, bin/ or public/', () => {

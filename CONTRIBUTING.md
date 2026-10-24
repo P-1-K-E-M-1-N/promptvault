@@ -12,7 +12,7 @@ Thanks for helping. The project has one job: **every AI session on your machine,
 ## Setup
 
 ```sh
-git clone https://github.com/YOUR_GITHUB_USERNAME/promptvault
+git clone https://github.com/P-1-K-E-M-1-N/promptvault
 cd promptvault
 npm test            # node:test, no install step needed
 npm run demo        # opens the UI on the fake fixture data only

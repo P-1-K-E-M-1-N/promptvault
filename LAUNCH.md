@@ -3,7 +3,7 @@
 ## Before launch: checklist
 
 - [ ] Pick the final name (DECISIONS.md → Name), then rename in `package.json`, README, `public/index.html`.
-- [ ] Replace `YOUR_NAME` / `YOUR_GITHUB_USERNAME` in `package.json`, `LICENSE`, `.github/FUNDING.yml`, `public/index.html`, README, CONTRIBUTING.
+- [x] Author set to Nickel, GitHub P-1-K-E-M-1-N.
 - [ ] **Test the three export parsers on real exports.** Request your own ChatGPT, Claude.ai, and Gemini (Takeout, JSON) exports and import them. They were built from documentation and hand-made fixtures only. Fix any field-name drift *before* the HN post, because "it didn't import my export" will be the top comment otherwise.
 - [ ] Run `npm test` on macOS and Linux (CI does this once the repo is on GitHub). Only Windows was tested locally.
 - [ ] Record `docs/hero.gif` (below) and swap it into the README.

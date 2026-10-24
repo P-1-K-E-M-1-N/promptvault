@@ -33,15 +33,15 @@
     "cli",
     "ai-history"
   ],
-  "author": "YOUR_NAME",
+  "author": "Nickel",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YOUR_GITHUB_USERNAME/promptvault.git"
+    "url": "git+https://github.com/P-1-K-E-M-1-N/promptvault.git"
   },
   "bugs": {
-    "url": "https://github.com/YOUR_GITHUB_USERNAME/promptvault/issues"
+    "url": "https://github.com/P-1-K-E-M-1-N/promptvault/issues"
   },
-  "homepage": "https://github.com/YOUR_GITHUB_USERNAME/promptvault#readme",
+  "homepage": "https://github.com/P-1-K-E-M-1-N/promptvault#readme",
   "dependencies": {}
 }

@@ -128,6 +128,6 @@ Launch plan, post drafts, and success criteria are in [LAUNCH.md](LAUNCH.md). De
 
 <div align="center">
 
-MIT licensed · Made by [YOUR_NAME](https://github.com/YOUR_GITHUB_USERNAME) · [Sponsor on GitHub](https://github.com/sponsors/YOUR_GITHUB_USERNAME)
+MIT licensed · Made by [Nickel](https://github.com/P-1-K-E-M-1-N) · [Sponsor on GitHub](https://github.com/sponsors/P-1-K-E-M-1-N)
 
 </div>
